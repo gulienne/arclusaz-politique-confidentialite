@@ -16,6 +16,11 @@ Données opérationnelles : informations relatives aux inventaires de matériel,
 Données techniques et d'utilisation : rapports de plantage et d’erreurs (associés à l’identifiant de l’utilisateur, à son rôle et à son affectation, ainsi qu’au module utilisé), 
 statistiques d’utilisation des modules de l’application (écrans consultés, rôle et affectation, modèle d’appareil, version du système et de l’application, 
 pays et région approximatifs). Les statistiques d’utilisation ne sont pas associées à l’identité de l’utilisateur.
+Données relatives aux victimes prises en charge : lors d’une intervention, l’agent peut saisir une fiche concernant une personne secourue 
+(identité, date de naissance, sexe, nationalité, adresse, état, observations, lieu de dépose, position GPS et photo). 
+Ces informations peuvent inclure des données de santé. Elles sont enregistrées uniquement sur l’appareil de l’agent, sous forme chiffrée, 
+ne sont jamais envoyées sur nos serveurs et sont automatiquement supprimées 90 jours après leur saisie. 
+Elles ne sont transmises que si l’agent choisit de partager le bilan, par le moyen de son choix aux services partenaires qui ont participé au secours ou a sa prise en ccharge. 
 
 3. Utilisation des données
 Les données collectées sont strictement destinées aux finalités suivantes :
@@ -24,6 +29,7 @@ Permettre la géolocalisation et le suivi en temps réel lors des interventions.
 Authentifier les utilisateurs et sécuriser les accès à l'application.
 Améliorer la stabilité et les performances techniques de l'application.
 Mesurer l’utilisation des différents modules de l’application afin d’orienter ses évolutions.
+Permettre aux agents de consigner et de transmettre le bilan des victimes prises en charge lors des interventions.
 
 4. Partage des données et services tiers
 DJX entreprise ne vend, ne loue et ne commercialise aucune donnée personnelle à des tiers.
@@ -33,6 +39,8 @@ Cloud Storage), authentification (Firebase Authentication), notifications (Fireb
 statistiques d’utilisation (Google Analytics for Firebase). Certaines données peuvent être traitées aux États-Unis ; 
 ces transferts sont encadrés par le Data Privacy Framework UE–États-Unis et les clauses contractuelles types de la Commission européenne.
 Ces services tiers traitent les données conformément à leurs propres politiques de confidentialité et aux standards de sécurité en vigueur (RGPD).
+L’application interroge également des services publics ou ouverts (Base Adresse Nationale, IGN, Open-Meteo, Pioupiou) pour la recherche d’adresses, 
+les fonds de carte et les données d’altitude et de vent ; seuls les termes recherchés ou les coordonnées concernées leur sont transmis.
 
 5. Conservation et sécurité des données
 Les données d'inventaire et d'intervention sont conservées pour la durée nécessaire à l'exploitation du service.
