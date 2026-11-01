@@ -21,17 +21,24 @@ Données relatives aux victimes prises en charge : lors d’une intervention, l�
 Ces informations peuvent inclure des données de santé. Elles sont enregistrées uniquement sur l’appareil de l’agent, sous forme chiffrée, 
 ne sont jamais envoyées sur nos serveurs et sont automatiquement supprimées 90 jours après leur saisie. 
 Elles ne sont transmises que si l’agent choisit de partager le bilan, par le moyen de son choix aux services partenaires qui ont participé au secours ou a sa prise en ccharge. 
+Alerte d’urgence : position au moment du déclenchement, nom de l’agent, heure de l’alerte, noms des agents qui la prennent en charge.
 
 3. Utilisation des données
 Les données collectées sont strictement destinées aux finalités suivantes :
 Assurer la gestion, le contrôle et le suivi des inventaires de matériel dans les véhicules.
-Permettre la géolocalisation et le suivi en temps réel lors des interventions.
+Permettre la géolocalisation et le suivi en temps réel lors des interventions ou d'un lancement d'alerte d'urgence §4.
 Authentifier les utilisateurs et sécuriser les accès à l'application.
 Améliorer la stabilité et les performances techniques de l'application.
 Mesurer l’utilisation des différents modules de l’application afin d’orienter ses évolutions.
 Permettre aux agents de consigner et de transmettre le bilan des victimes prises en charge lors des interventions.
 
-4. Partage des données et services tiers
+4. Alerte d'urgence
+Lorsqu’un agent déclenche une alerte d’urgence depuis la carte (appui de 5 secondes sur le triangle rouge), 
+sa position, son nom et l’heure de l’alerte sont enregistrés et transmis à tous les agents ARCLUSAZ : affichage sur la carte et notification. 
+Le partage de position en direct démarre automatiquement et reste actif jusqu’à ce que l’agent le désactive. Les agents qui prennent l’alerte en charge 
+sont visibles de tous. L’alerte est supprimée automatiquement 30 jours après son déclenchement.
+
+5. Partage des données et services tiers
 DJX entreprise ne vend, ne loue et ne commercialise aucune donnée personnelle à des tiers.
 Pour assurer l'infrastructure technique de l'application, nous faisons appel à des prestataires certifiés :
 Google Firebase (Google Ireland Limited) : Google Firebase (Google Ireland Limited) : hébergement de la base de données et des fichiers (Cloud Firestore, 
@@ -42,18 +49,18 @@ Ces services tiers traitent les données conformément à leurs propres politiqu
 L’application interroge également des services publics ou ouverts (Base Adresse Nationale, IGN, Open-Meteo, Pioupiou) pour la recherche d’adresses, 
 les fonds de carte et les données d’altitude et de vent ; seuls les termes recherchés ou les coordonnées concernées leur sont transmis.
 
-5. Conservation et sécurité des données
+6. Conservation et sécurité des données
 Les données d'inventaire et d'intervention sont conservées pour la durée nécessaire à l'exploitation du service.
 Les données de géolocalisation en direct ne sont traitées que pendant la durée active de l'intervention.
 Nous mettons en œuvre des mesures de sécurité techniques et organisationnelles (chiffrement des communications via HTTPS/TLS, contrôle d'accès) pour protéger vos données contre tout accès non autorisé.
 Les rapports de plantage sont conservés 90 jours. Les statistiques d’utilisation sont conservées 2 mois au niveau de l’utilisateur, puis uniquement sous forme agrégée.
 
-6. Vos droits (RGPD)
+7. Vos droits (RGPD)
 Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez des droits suivants concernant vos données personnelles :
 Droit d'accès et de rectification : vous pouvez consulter et modifier vos informations directement depuis l'application ou sur demande.
 Droit à l'effacement : vous pouvez demander la suppression de votre compte et de vos données personnelles.
 Droit d'opposition et de limitation du traitement.
 Pour exercer ces droits, contactez-nous à l'adresse suivante : djx.entp@gmail.com
 
-7. Modifications de la politique de confidentialité
+8. Modifications de la politique de confidentialité
 DJX entreprise se réserve le droit de modifier cette politique de confidentialité à tout moment. Toute mise à jour sera publiée sur cette page avec la date de révision.
