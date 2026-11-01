@@ -1,5 +1,5 @@
 Politique de confidentialité de l'application Arclusaz
-Dernière mise à jour : 13 septembre 2026
+Dernière mise à jour : 1er novembre 2026
 
 La présente politique de confidentialité décrit la manière dont DJX entreprise collecte, utilise, conserve et protège les données personnelles des utilisateurs de l'application mobile Arclusaz (gestion des inventaires de véhicules et suivi des interventions).
 
@@ -13,7 +13,9 @@ L'application Arclusaz peut être amenée à collecter les catégories de donné
 Données d'identification et de compte : adresse email, identifiant utilisateur et nom/prénom (pour la gestion des accès et de l'authentification).
 Données de géolocalisation : position géographique de l'appareil en temps réel (uniquement lorsque la fonctionnalité de suivi en direct des interventions est activée).
 Données opérationnelles : informations relatives aux inventaires de matériel, états des véhicules et relevés d'interventions renseignés par les utilisateurs.
-Données techniques et d'utilisation : journaux de connexions, données de crash et performances de l'application.
+Données techniques et d'utilisation : rapports de plantage et d’erreurs (associés à l’identifiant de l’utilisateur, à son rôle et à son affectation, ainsi qu’au module utilisé), 
+statistiques d’utilisation des modules de l’application (écrans consultés, rôle et affectation, modèle d’appareil, version du système et de l’application, 
+pays et région approximatifs). Les statistiques d’utilisation ne sont pas associées à l’identité de l’utilisateur.
 
 3. Utilisation des données
 Les données collectées sont strictement destinées aux finalités suivantes :
@@ -21,17 +23,22 @@ Assurer la gestion, le contrôle et le suivi des inventaires de matériel dans l
 Permettre la géolocalisation et le suivi en temps réel lors des interventions.
 Authentifier les utilisateurs et sécuriser les accès à l'application.
 Améliorer la stabilité et les performances techniques de l'application.
+Mesurer l’utilisation des différents modules de l’application afin d’orienter ses évolutions.
 
 4. Partage des données et services tiers
 DJX entreprise ne vend, ne loue et ne commercialise aucune donnée personnelle à des tiers.
 Pour assurer l'infrastructure technique de l'application, nous faisons appel à des prestataires certifiés :
-Google Firebase (Google Ireland Limited) : hébergement de la base de données, authentification des utilisateurs et suivi des performances.
+Google Firebase (Google Ireland Limited) : Google Firebase (Google Ireland Limited) : hébergement de la base de données et des fichiers (Cloud Firestore, 
+Cloud Storage), authentification (Firebase Authentication), notifications (Firebase Cloud Messaging), rapports de plantage (Firebase Crashlytics) et 
+statistiques d’utilisation (Google Analytics for Firebase). Certaines données peuvent être traitées aux États-Unis ; 
+ces transferts sont encadrés par le Data Privacy Framework UE–États-Unis et les clauses contractuelles types de la Commission européenne.
 Ces services tiers traitent les données conformément à leurs propres politiques de confidentialité et aux standards de sécurité en vigueur (RGPD).
 
 5. Conservation et sécurité des données
 Les données d'inventaire et d'intervention sont conservées pour la durée nécessaire à l'exploitation du service.
 Les données de géolocalisation en direct ne sont traitées que pendant la durée active de l'intervention.
 Nous mettons en œuvre des mesures de sécurité techniques et organisationnelles (chiffrement des communications via HTTPS/TLS, contrôle d'accès) pour protéger vos données contre tout accès non autorisé.
+Les rapports de plantage sont conservés 90 jours. Les statistiques d’utilisation sont conservées 2 mois au niveau de l’utilisateur, puis uniquement sous forme agrégée.
 
 6. Vos droits (RGPD)
 Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez des droits suivants concernant vos données personnelles :
